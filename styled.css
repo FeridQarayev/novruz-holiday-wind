@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.holiday_container {
+  box-sizing: border-box;
+  margin: -15px;
+  padding: 0;
+  background-color: #001e3a;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.body_text {
+  position: relative;
+  width: 300px;
+  color: white;
+  transform: translate(70%, 0) rotate(-36deg);
+  width: 200px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.body_text h1 {
+  font-size: 50px;
+}
+
+.body_text h1 span {
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Shantell Sans", cursive !important;
+  height: 300px;
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+
+.simvol {
+  font-size: 100px !important;
+  color: white;
+  display: inline-block;
+  font-size: 50px;
+  transform: translate(160px, 170px) rotate(68deg);
+}
+
+.body_text_down {
+  text-align: center;
+  width: 200px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Shantell Sans", cursive !important;
+  position: absolute;
+  color: white;
+  transform: translate(50px, 90px) rotate(36deg);
+  border-bottom: 5px solid #fff;
+  margin-top: 10px;
+}
+
+.text_title {
+  margin-top: 50px;
+  text-align: center;
+  width: 230px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Shantell Sans", cursive !important;
+  transform: rotate(36deg);
+}
+
+.char1 {
+  transform: rotate(6deg);
+}
+
+.char2 {
+  transform: rotate(12deg);
+}
+
+.char3 {
+  transform: rotate(18deg);
+}
+
+.char4 {
+  transform: rotate(24deg);
+}
+
+.char5 {
+  transform: rotate(30deg);
+}
+
+.char6 {
+  transform: rotate(36deg);
+}
+
+.char7 {
+  transform: rotate(42deg);
+}
+
+.char8 {
+  transform: rotate(48deg);
+}
+
+.char9 {
+  transform: rotate(54deg);
+}
+
+.char10 {
+  transform: rotate(60deg);
+}
+
+.char11 {
+  transform: rotate(66deg);
+}
+
+.butterfly {
+  position: absolute;
+  right: 30%;
+  top: 35%;
+}
+
+.bf {
+  width: 34px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-20deg);
+}
+
+.bf svg path {
+  fill: white !important;
+}
+
+.bf .bf-1 {
+  top: 25%;
+  transform: rotate(-8deg);
+}
+
+.wing-left {
+  animation: left 0.5s linear infinite alternate;
+  transform-origin: right;
+}
+
+.wing-right {
+  animation: right 0.5s linear infinite alternate;
+  transform-origin: left;
+}
+
+.wing-right svg {
+  transform: scaleX(-1);
+}
+
+.bf[class^="wing-"] {
+  width: 50%;
+}
+
+.bf[class^="wing-"]svg {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes left {
+  to {
+    transform: rotateY(-60deg);
+  }
+}
+
+@keyframes right {
+  to {
+    transform: rotateY(-60deg);
+  }
+}
+
+.wind_gif {
+  margin-top: 390px;
+  position: relative;
+  transform: translate(-25%, 0);
+  color: white;
+}
+
+.wind_gif img {
+  width: 400px;
+}
